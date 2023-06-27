@@ -1,5 +1,5 @@
 {
-    "org_name": "cdi201team07",
+    "org_name": "andrewferrell",
     "team_name": "team07",
     "stack_name": "team07-201-stack",
     "stack_slug": "team07201stack",
