@@ -139,14 +139,14 @@ workflows:
             - grafana stack release
           filters: *on-push-main
 
-  generate-release-notes:
-    jobs:
-      - executor-tools/release:
-          name: release-cohort-base-team-creation
-          context: << pipeline.parameters.context >>
-          shell: << pipeline.parameters.shell-options >>
-          on-tag: true
-          filters: *on-tag-main
+  # generate-release-notes:
+  #   jobs:
+  #     - executor-tools/release:
+  #         name: release-cohort-base-team-creation
+  #         context: << pipeline.parameters.context >>
+  #         shell: << pipeline.parameters.shell-options >>
+  #         on-tag: true
+  #         filters: *on-tag-main
 
   nightly grafana stack configuration validation:
     triggers:
