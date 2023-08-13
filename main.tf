@@ -28,10 +28,10 @@ resource "grafana_cloud_stack_service_account_token" "management" {
 }
 
 # Create an API Key we can use to push metrics into the stack
-# resource "grafana_cloud_api_key" "metrics_publisher" {
-#   provider = grafana.admin
-#   cloud_org_slug = var.org_name
-#   name           = "publisher-key"
-#   role           = "MetricsPublisher"
-# }
+resource "grafana_cloud_api_key" "metrics_publisher" {
+  provider = grafana.admin
+  cloud_org_slug = var.org_name
+  name           = "publisher-key"
+  role           = "MetricsPublisher"
+}
 
